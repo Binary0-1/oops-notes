@@ -27,7 +27,7 @@ class EmployeeEmailService:
 
 ## O — Open/Closed Principle (OCP)
 
-A class should be open for extension but closed for modification
+A class should be open for extension but closed for modification.
 
 #### Bad Example
 ```python
