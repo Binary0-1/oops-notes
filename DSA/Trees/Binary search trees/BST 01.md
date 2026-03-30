@@ -41,3 +41,79 @@ public TreeNode searchBST(TreeNode root, int val) {
 }
 ```
 
+### Insertion
+
+Insertion in a BST is straight forward for a node to be inserted we need to find an empty place where this new node fits maintaining the BST property
+### Implementation
+
+
+```java
+class Solution {
+
+public TreeNode insertIntoBST(TreeNode root, int val) {
+TreeNode result = insert(root,val);
+return result;
+}
+
+public TreeNode insert(TreeNode root,int val){
+	if(root == null) return new TreeNode(val);
+		if(root.val > val){
+			root.left = insert(root.left,val);
+		}else{
+			root.right = insert(root.right,val);
+		}
+		return root;
+	}
+}
+```
+
+### Deletion:
+
+
+The deletion process in a BST is a bit complicated if we have children in the node because now we need to restructure the tree to maintain its property .
+
+Recursive solution :
+
+first we go to the branch in which we are expecting to find the node to be deleted and for each child node we call delete(node.left,value) or delete(node.right,val) if we find the node to be deleted first we check if its has 1 chid or 0 child that is straight forward we just need to delete the node and assign its child to the prev node ie return new subtree without that node
+
+if it has left and right we will need to find th successor a successor for a node will always lie in right for a bst as right values are greater so do a inorder successor ie go left until we cannot on the right branch . once we have the successor set its value to the current node and then call delete on the right branch.
+
+`Note:  as we have only assigned the value of the root to the succcesor the left is automatically preserved`
+
+now that we have replaced we can return the node 
+
+
+### Implementation:
+
+```java
+class Solution {
+
+    public TreeNode deleteNode(TreeNode root, int key) {
+        return delete(root,key);
+    }
+    public TreeNode getSuccessor(TreeNode root){
+        root = root.right;
+        while(root.left != null){
+            root = root.left;
+        }
+        return root;
+    }
+
+
+    public TreeNode delete(TreeNode root, int x){
+        if(root == null) return root;
+        if(root.val > x){
+            root.left = delete(root.left,x);
+        }else if(root.val < x){
+            root.right = delete(root.right,x);
+        }else{
+            if (root.left == null) return root.right;
+            if (root.right == null) return root.left;
+            TreeNode succ = getSuccessor(root);
+            root.val = succ.val;
+            root.right = delete(root.right, succ.val);
+        }
+        return root;
+    }
+}
+```
