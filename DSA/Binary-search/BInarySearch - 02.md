@@ -54,3 +54,61 @@ class Solution {
 
 ```
 
+
+A similar pattern Question is https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/ with the key part being able to identify the left and right keys correctly.
+
+### Question 4: Split Array Largest Sum
+
+Given an integer array `nums` and an integer `k`, split `nums` into `k` non-empty subarrays such that the largest sum of any subarray is **minimized**.
+
+Return _the minimized largest sum of the split_.
+
+A **subarray** is a contiguous part of the array.
+
+Intuition:
+
+Almost the same problem just the key being the identification of the range here the min largest sum can the max element in the array and the max Largest sum will be the sum of all the elements
+
+We will need a helper function that returns how many subarray will be possible for a sum 
+Based on that we can manipulate the left and right and aim for sol where the sum is minimized
+
+Code:
+```java
+class Solution {
+    public int splitArray(int[] nums, int k) {
+        int left = 0;
+        int totalSum = 0;
+        for(int num: nums){
+            left = Math.max(left,num);
+            totalSum += num;
+        }
+        int result = 0;
+        int right = totalSum;
+        while(left <= right){
+            int mid = left + (right - left)/2;
+            int subArrayCount = largestSum(nums,mid);
+            if(subArrayCount <= k){
+                result = mid;
+                right = mid - 1;
+            }else{
+                left = mid + 1;
+            }
+        }
+        return result;
+    }
+  
+    public int largestSum(int[] nums,int largestSum ){
+        int subarrayCount = 1;
+        int currCount = 0;
+        for(int num : nums){
+            if(currCount+num <= largestSum){
+                currCount += num;
+            }else{
+                subarrayCount++;
+                currCount = num;
+            }
+        }
+        return subarrayCount;
+    }
+}
+```

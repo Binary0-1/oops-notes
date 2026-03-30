@@ -20,37 +20,8 @@
               "icon": "lucide-file",
               "title": "BInarySearch - 01"
             }
-          },
-          {
-            "id": "803acdb265d606f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/Binary-search/BInarySearch - 02.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BInarySearch - 02"
-            }
-          },
-          {
-            "id": "5e852be038f45c0e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/Binary-search/BInarySearch - 02.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BInarySearch - 02"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -224,13 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "803acdb265d606f0",
+  "active": "23260bee00802215",
   "lastOpenFiles": [
+    "DSA/Binary-search/BInarySearch - 02.md",
     "DSA/Trees/Binary search trees/BST 01.md",
     "DSA/Binary-search/BInarySearch - 01.md",
     "DSA/Trees/Binary search trees",
     "DSA/Trees",
-    "DSA/Binary-search/BInarySearch - 02.md",
     "DSA/Binary-search",
     "Untitled",
     "DSA",
