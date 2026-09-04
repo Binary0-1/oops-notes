@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "68068a34c05a4658",
+        "id": "d87439794ffa7dbe",
         "type": "tabs",
         "children": [
           {
-            "id": "8f607d57105134cd",
+            "id": "3fdefd7971ac3dbe",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DSA/sliding window/Sliding window.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Sliding window"
+              "title": "New tab"
             }
           }
         ]
@@ -180,7 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 531.5
+    "width": 322.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -195,29 +191,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8f607d57105134cd",
+  "active": "3fdefd7971ac3dbe",
   "lastOpenFiles": [
-    "DSA/sliding window/Sliding window.md",
-    "DSA/sliding window",
-    "Untitled",
-    "Untitled 1",
-    "Nodejs/Node 01.md",
     "DSA/Trees/Binary search trees/BST 01.md",
-    "Nodejs",
+    "DSA/sliding window/Sliding window.md",
+    "DesignPaterns/Design Pattern.md",
+    "DSA/sliding window",
+    "DesignPaterns/Strategy Pattern.md",
+    "Excalidraw/Drawing 2026-09-04 21.08.20.excalidraw.md",
+    "Untitled.base",
+    "SHL Interview Prep.md",
+    "Excalidraw",
     "DSA/Binary-search/BInarySearch - 02.md",
-    "DSA/Trees/Binary search trees",
-    "DSA/Trees",
     "DSA/Binary-search/BInarySearch - 01.md",
-    "DSA/Binary-search",
-    "DSA",
     "LLD - python/OOPs - Week 1 Python - 2.md",
     "LLD - python/OOPs - Week 1 Python - 1.md",
-    "DesignPaterns/Strategy Pattern.md",
+    "DSA/Trees/Trees/Tree 01.md",
+    "Plan/Plan.md",
+    "Plan",
+    "DSA/Trees/Trees",
+    "DSA/Trees/Binary search trees",
+    "DSA/Trees",
+    "DSA/Binary-search",
+    "DSA",
     "OOPs - Week 1 Python.md",
-    "Untitled.md",
     "DesignPaterns",
     "Browser API's ..md",
-    "LLD - python",
     "Excalidraw/Drawing 2026-03-21 10.06.02.excalidraw.md",
     "Excalidraw/Drawing 2026-03-21 10.05.00.excalidraw.md",
     "Untitled.canvas",
